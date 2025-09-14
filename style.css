@@ -143,7 +143,6 @@ nav .nav-links a:hover {
     font-weight: 600;
     user-select: none;
     appearance: none;
-    /* Remove default arrow on some browsers */
     -webkit-appearance: none;
     -moz-appearance: none;
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23218648' height='12' viewBox='0 0 24 24' width='12' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
@@ -151,7 +150,6 @@ nav .nav-links a:hover {
     background-position: right 10px center;
     background-size: 12px;
     padding-right: 36px;
-    /* Space for arrow */
 }
 
 #language-select:hover,
@@ -159,9 +157,6 @@ nav .nav-links a:hover {
     border-color: #7ed574;
     box-shadow: 0 0 10px #7ed574;
 }
-
-
-/* Optional: style the container of the select to align nicely in navbar */
 
 .language-select-container {
     position: relative;
@@ -288,7 +283,6 @@ nav .nav-links a:hover {
 
 .cart-sidebar.open {
     right: 0;
-    /* Shown when 'open' class is added */
 }
 
 .cart-sidebar h2 {
@@ -378,9 +372,6 @@ header .cta-btn:hover {
     transform: translateY(-2px);
 }
 
-
-/* How It Works Section */
-
 .how-it-works {
     text-align: center;
     padding: 3em 2em;
@@ -412,9 +403,6 @@ header .cta-btn:hover {
     color: #15643b;
     margin-bottom: 0.5em;
 }
-
-
-/* Market Section */
 
 .market {
     padding: 3em 2em;
