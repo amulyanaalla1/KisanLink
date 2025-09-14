@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        kisan Link- Fresh Produce from Farm to You</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Kisan Link</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#market">Market</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#support">Support</a></li>
+        </ul>
+        <ul>
+            <li>
+                <select id="language-select" aria-label="Select Language">
+        <option value="as"> অসমীয়া</option>
+        <option value="bn"> বাংলা</option>
+        <option value="brx"> बर'</option>
+        <option value="doi">डोगरी</option>
+        <option value="gu"> ગુજરાતી</option>
+        <option value="hi">हिंदी</option>
+        <option value="kn">ಕನ್ನಡ</option>
+        <option value="ks">कश्मीरी</option>
+        <option value="kok"> कोंकणी</option>
+        <option value="maithili"> मैथिली</option>
+        <option value="ml"> മലയാളം</option>
+        <option value="mni"> মৈতৈলোন্</option>
+        <option value="mr"> मराठी</option>
+        <option value="ne"> नेपाली</option>
+        <option value="or"> ଓଡ଼ିଆ</option>
+        <option value="pa"> ਪੰਜਾਬੀ</option>
+        <option value="sa"> संस्कृतम्</option>
+        <option value="sat">Santa</option>
+        <option value="sd">سنڌي</option>
+        <option value="ta"> தமிழ்</option>
+        <option value="te"> తెలుగు</option>
+        <option value="ur">اردو</option>
+      </select>
+            </li>
+        </ul>
+        <div class="nav-actions">
+
+            <li class="dropdown">
+                <button class="dropbtn">Login ▼</button>
+                <div class="dropdown-content">
+                    <a href="#user-login">User Login</a>
+                    <a href="#farmer-login">Farmer Login</a>
+                    <a href="#partner-login">Delivery Partner Login</a>
+                </div>
+            </li>
+
+
+            <div id="cart-icon" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </div>
+
+        </div>
+    </nav>
+
+    <div id="user-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn user-close">&times;</span>
+            <h2>Customer Login</h2>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <input type="password" placeholder="Enter your password" required>
+                <button type="submit" class="submit-btn">Login</button>
+                <p>New here? <a href="#">Create an account</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="farmer-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn farmer-close">&times;</span>
+            <h2>Farmer Login</h2>
+            <form>
+                <input type="text" placeholder="Enter your Farmer ID" required>
+                <input type="password" placeholder="Enter your password" required>
+                <button type="submit" class="submit-btn">Login</button>
+                <p>Not registered? <a href="#list-produce">Become a seller</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <span id="close-cart-btn" class="close-btn">&times;</span>
+        <h2>Your Cart</h2>
+        <div id="cart-items" class="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
+        <div class="cart-summary">
+            <h3>Total: ₹<span id="cart-total">0.00</span></h3>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+
+    <header id="home">
+        <h1>Empowering Farmers <br> Direct-to-Market App</h1>
+        <p>Connect to buyers nearby, negotiate prices, manage transactions, and learn best practices.</p>
+        <a href="#market" class="cta-btn">Shop Now</a>
+    </header>
+
+    <section class="how-it-works">
+        <h2>Freshness in Three Simple Steps</h2>
+        <div class="steps-container">
+            <div class="step">
+                <i class="fas fa-tractor"></i>
+                <h3>1. Farmer Lists Produce</h3>
+                <p>Farmers upload their fresh harvest directly from the farm, setting their own prices.</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-shopping-basket"></i>
+                <h3>2. You Place an Order</h3>
+                <p>Browse the market, choose from the freshest local produce, and pay securely online.</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-motorcycle"></i>
+                <h3>3. Rapid Delivery to You</h3>
+                <p>Our delivery partners pick up the order and deliver it straight to your doorstep,anywhere in the country</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="market" class="market">
+        <h2>Today's Fresh Market</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="tomatoes.png" alt="Fresh Tomatoes">
+                <h3>Fresh Tomatoes</h3>
+                <p class="price">₹40 / kg</p>
+                <p class="farmer">From amulya's Farm</p>
+                <button class="buy-btn" data-name="Fresh Tomatoes" data-price="40">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="spinach.png" alt="Organic Spinach">
+                <h3>Organic Spinach</h3>
+                <p class="price">₹25 / bunch</p>
+                <p class="farmer">From Lakshmi's Farm</p>
+                <button class="buy-btn" data-name="Organic Spinach" data-price="25">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Mangoes.png" alt="Sweet Mangoes">
+                <h3>Alphonso Mangoes</h3>
+                <p class="price">₹600 / dozen</p>
+                <p class="farmer">From Devi Farm</p>
+                <button class="buy-btn" data-name="Alphonso Mangoes" data-price="600">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="carrot.png" alt="Fresh Carrots">
+                <h3>Farm Carrots</h3>
+                <p class="price">₹50 / kg</p>
+                <p class="farmer">From priya's Farm</p>
+                <button class="buy-btn" data-name="Farm Carrots" data-price="50">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="community" class="community">
+        <h2>Join Our Growing Community</h2>
+        <p>Connect with fellow farmers, share tips on sustainable agriculture, and stay updated on market trends.</p>
+        <div class="community-content">
+            <div class="community-card">
+                <h3>Farming Forums</h3>
+                <p>Ask questions and share your knowledge with thousands of farmers across the country.</p>
+                <a href="#">Join Discussion</a>
+            </div>
+            <div class="community-card">
+                <h3>Success Stories</h3>
+                <p>Read inspiring stories from farmers who have grown their business with KisanLink.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="support" class="support">
+        <h2>We're Here to Help</h2>
+        <div class="support-container">
+            <div class="faq">
+                <h3>Frequently Asked Questions</h3>
+                <details>
+                    <summary>How do I get paid as a farmer?</summary>
+                    <p>Payments are transferred directly to your linked UPI account within 24 hours of successful delivery.</p>
+                </details>
+                <details>
+                    <summary>Who handles the delivery?</summary>
+                    <p>We've partnered with local delivery services to ensure fast and reliable pickup from your farm and delivery to the customer.</p>
+                </details>
+                <details>
+                    <summary>What if there is a problem with an order?</summary>
+                    <p>You can raise a ticket through the app or use our 24/7 live chat. Our support team will resolve it immediately.</p>
+                </details>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +91-1800-KISANLINK-00</p>
+                <p><i class="fas fa-envelope"></i> KisanLink@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo">
+        <h2>App Demo Video</h2>
+        <p>Watch walkthroughs to learn all app features and see innovation in action!</p>
+        <a href="#" class="demo-btn">View Demo</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 KisanLink. Building better markets for farmers across india</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
